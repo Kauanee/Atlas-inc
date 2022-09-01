@@ -16,7 +16,7 @@ body
 }
 .menu
 {
-    position: absolute;
+    filter: opacity(80%);
     width: 100%;
     height: 60px;
     background-color: black;
@@ -26,8 +26,12 @@ body
     margin-top: 0px;
     color:white;
 }
-.aladin
+.telaFilmes
 {
-    width:"500px"; 
-    height:"500px";
+    background-image:url(imagens//aladinfilme.jpg);
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
 }

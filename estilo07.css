@@ -1,0 +1,53 @@
+body{
+    background-image: linear-gradient( to right,  black 50%, #585757 50% ); 
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 30px;
+    margin-left: -820px;
+    
+}
+.login{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+}
+a{
+    color: #66DA43;
+    font-size: 30px;
+}
+.verde{
+    width: 580px;
+    height: 620px;
+    background-color: #66DA43;
+    margin-left:55%;
+    position: absolute;
+    margin-top: 40px;
+}
+.preto{
+    width: 580px;
+    height: 620px;
+    background-color: black;
+    margin-left:57%;
+    position: absolute;
+    margin-top: 80px;
+
+
+}
+.moinho{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top:200px;
+    right: 100px;
+}

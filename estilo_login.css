@@ -1,10 +1,8 @@
 body{
-    
-}
-.minhacor{
     background-image: linear-gradient( to right,  black 50%, #585757 50% )!important;
     color: white !important;
 }
+
 header{
         display: flex;
         align-items: center;
@@ -49,4 +47,11 @@ header{
 }
 .coluna2{
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    width: 50px;
+}
+
+.logo{
+    width:560px;
+    align-content: center;
+}

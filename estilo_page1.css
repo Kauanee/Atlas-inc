@@ -1,6 +1,4 @@
-body{
-    
-}
+
 .minhacor{
     background-image: linear-gradient( to right,  black 50%, #585757 50% )!important;
     color: white !important;
@@ -9,27 +7,24 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        
         margin-top: 30px;
         margin-left: -820px;
-        
-    }
-    
+}
 .verde{
     width: 580px;
     height: 620px;
     background-color: #66DA43;
-    margin-left:55%;
-    position: absolute;
-    margin-top: 40px;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 100px
 }
 .preto{
     width: 580px;
     height: 620px;
     background-color: black;
-    margin-left:57%;
     position: absolute;
-    margin-top: 80px;
+    margin-top: 30px;
+    margin-left: 40px
 }
 .cine{
     color:white;
@@ -49,4 +44,16 @@ header{
 }
 .coluna2{
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
+.coluna1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo
+{
+    margin-top: 25px;
+}

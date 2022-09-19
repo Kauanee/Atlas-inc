@@ -1,4 +1,5 @@
 body{
+
     background-image: linear-gradient( to right,  black 50%, #585757 50% )!important;
     color: white !important;
 }
@@ -7,27 +8,37 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        
         margin-top: 30px;
         margin-left: -820px;
-        
-    }
-    
+}
 .verde{
     width: 580px;
     height: 620px;
     background-color: #66DA43;
-    margin-left:55%;
-    position: absolute;
-    margin-top: 40px;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 100px
 }
 .preto{
     width: 580px;
     height: 620px;
     background-color: black;
-    margin-left:57%;
     position: absolute;
-    margin-top: 80px;
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+}
+.conteudo
+{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 50px;
 }
 .cine{
     color:white;
@@ -48,10 +59,32 @@ header{
 .coluna2{
     display: flex;
     flex-direction: column;
-    width: 50px;
 }
-
-.logo{
-    width:560px;
-    align-content: center;
+.coluna1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo
+{
+    margin-top: 25px;
+}
+.bem
+{
+    font-size: 22px;
+}
+.button
+{
+    background-color: #66DA43;
+    border-radius: 5px;
+}
+.moinho
+{
+    padding: 50px;
+}
+a
+{
+    color: #66DA43;
 }

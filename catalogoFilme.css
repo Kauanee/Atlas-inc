@@ -1,0 +1,40 @@
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 65px;
+    filter: opacity(75%);
+}
+p{
+    color: white;
+}
+p:hover{
+    color:greenyellow;
+}
+nav, ul{
+display: flex;
+flex-direction: row;
+}
+li{
+    padding: 0 20px;
+    margin-top: -7px;
+}
+.logo{
+    padding: 5px;
+}
+.imagem{
+  margin-top: -100px; 
+  background-image: url(imagens//aladin1.png);
+  width: 100%;
+  height: 400px;
+}

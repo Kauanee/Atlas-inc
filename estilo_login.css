@@ -1,8 +1,9 @@
+body{
 
-.minhacor{
     background-image: linear-gradient( to right,  black 50%, #585757 50% )!important;
     color: white !important;
 }
+
 header{
         display: flex;
         align-items: center;
@@ -56,4 +57,5 @@ header{
 #logo
 {
     margin-top: 25px;
+    width: 50px;
 }

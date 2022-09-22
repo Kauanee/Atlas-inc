@@ -1,5 +1,13 @@
 body{
-    background-color: black
+   
+    background-color: rgb(0, 0, 0) !important;
+}
+nav{
+    background-color: black;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 65px;
+    filter: opacity(75%);
 }
 .logo{
     display: flex;
@@ -9,16 +17,6 @@ body{
     margin-top: 30px;
     margin-left: -820px
 }
-.combos 
-{
-    width:100px;
-    top:100px;
-    left: 350px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 h1{
     color: white;
     font-size: 30px;
@@ -26,41 +24,56 @@ h1{
 }
 a{
     color: #66DA43;
-    font-size: 30px;
-}
-.combo01{
-    border: #FFFF00;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 500px;
-}
-.text01{
-    color:#EA3DEF;
-    position: absolute;
     font-size: 20px;
     
 }
-.combo02{
-    top:70px;
-    border: #FFFF00;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 500px;
+.menu
+{
+    padding: 5px;
+    height: 50px;
+    margin-top: 3px;
 }
-.text02{
-    color: #EB3347;
-    position: absolute;
-    font-size: 20px;
+ul{
+    list-style: none;
+   
 }
-.combo03{
-    top:70px;
-    border: #FFFF00;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 500px;
+nav{
+    background-color: black;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 65px;
+    filter: opacity(75%);
 }
-.text03{
-    color:#66DA43;
-    position: absolute;
-    font-size: 20px;
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover{
+    color:greenyellow;
+}
+nav, ul{
+display: flex;
+flex-direction: row;
+
+}
+li{
+    padding: 0 20px;
+    margin:auto;
+    
+}
+.logo{
+    padding: 5px;
+    height: 50px;
+    margin-top: 3px;
+}
+.letras{
+    font-size: 30px;
+    margin-top: -170px;
+    color: white;
+    margin-left: 40px;
+}
+.combinho{
+    width: 100%;
+    margin-top: -100px;
 }

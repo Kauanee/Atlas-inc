@@ -5,6 +5,39 @@ body{
     overflow: hidden;
 }
 
+ul{
+    list-style: none;
+}
+nav{
+    background-color: black;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 65px;
+    filter: opacity(75%);
+}
+a{
+    color: white !important;
+    
+}
+a:hover{
+    color:greenyellow !important;
+}
+nav, ul{
+display: flex;
+flex-direction: row;
+
+}
+li{
+    padding: 0 20px;
+    margin:auto;
+    
+}
+.logo{
+    padding: 5px;
+    height: 50px;
+    margin-top: 3px;
+}
+
 header{
         display: flex;
         align-items: center;
@@ -17,7 +50,7 @@ header{
     height: 620px;
     background-color: #66DA43;
     position: relative;
-    margin-top: 70px;
+    margin-top: 35px;
     margin-left: 100px
 }
 .preto{
@@ -40,16 +73,6 @@ header{
     height: 100%;
     position: relative;
     margin-top: 50px;
-}
-.cine{
-    color:white;
-    font-size: 25px;
-    text-align: center;
-}
-.cine1{
-    color: #66DA43;
-    font-size: 25px;
-    text-align: center;
 }
 #textLogin
 {
@@ -78,10 +101,15 @@ header{
 }
 .button
 {
+    font-size: 18px;
     background-color: #66DA43;
     border-radius: 5px;
 }
 .moinho
 {
-    padding: 50px;
+    padding: 10px;
+}
+label
+{
+    font-size: 19px;
 }

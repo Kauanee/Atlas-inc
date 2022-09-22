@@ -4,14 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página Escolha Pagamento</title>
-    <link rel="stylesheet" href="estilo_forPag.css">
+    <title>Pagina Pagamento Cartao</title>
+    <link rel="stylesheet" href="estilo_pagCartao.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
 <body class="bg minhacor">
-
 
 
     <nav>
@@ -33,6 +32,7 @@
     <div class="row">
         <div class="col-md-6 col-xs-12 coluna1">
             <img id="logo" src="imagens//cineville.png" width="550px">
+            <h1 class="bg cine">CineVille, trazendo o conforto e a magia do cinema que <br> você merece! </h1>
             <img src="imagens//pipoquinha.png" width="400px" height="400px">
         </div>
         <div class="col-md-6 col-xs-12 coluna2">
@@ -40,45 +40,42 @@
                 <div class="bg preto">
                     <div class="conteudo">
 
-                        <div class="bem"><b>Escolha sua Forma de Pagamento!</b></div>
+                        <label class="bem"><b>Pagamento via Cartão de Crédito</b></label>
+                        <br>
+                        <br>
+                        <br>
+                        <label class="textverde"><b>Informações:</b></label>
+                        <br>
+                        <br>
+                        <label>Número do Cartão:</label>
+                        <br>
+                        <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                            type="text" placeholder="Insira o Número do Cartão">
+                        <br>
+                        <br>
+                        <label>Data de Validade:</label>
+                        <br>
+                        <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                            type="text" placeholder="Insira a Data de Validade">
+                        <br>
+                        <br>
+                        <label>CVV:</label>
+                        <br>
+                        <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                            type="text" placeholder="Insira o CVV">
                         <br>
                         <br>
                         <br>
                         <br>
-
-                        <a href="pagamentoPix.html">
-                        <button style="height: 50px; width:200px;" class="button" onclick="Pix();">
-                            <b>Pix</b>
-                        </button>
-                        </a>
-
-                        <br>
-                        <br>
-                        <br>
-
-                        <a href="pagamentoBoleto.html">
-                        <button style="height: 50px; width:200px;" class="button" onclick="Boleto();">
-                            <b>Boleto</b>
-                        </button>
-                        </a>
-                        <br>
-                        <br>
-                        <br>
-
-                        <a href="pagamentoCartao.html">
-                        <button style="height: 50px; width:200px;" class="button" onclick="Cartao();">
-                            <b>Cartão de Crédito</b>
-                        </button>
-                        </a>
-
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-
-                        <div class="moinho">
-                            <img src="imagens/caminho.png" width="60px">
+                        <div class="linha">
+                            <div class="moinho">
+                                <img src="imagens/caminho.png" width="70px">
+                            </div>
+                            <button style="height: 40px; width:110px;" class="button" onclick="Concluído();">
+                                <b>Concluído!</b>
+                            </button>
                         </div>
+
                     </div>
                 </div>
             </div>

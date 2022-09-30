@@ -34,7 +34,7 @@ function OcuparPoltronas(id) {
 }
 
 function OcuparPoltronasPreferenciais(id) {
-    document.getElementById(id).src = "imagens/puffdeficiente.png";
+    document.getElementById(id).src = "imagens/puffselecionado.png";
     document.getElementById(id).name = "PoltronaEscolhidaPreferencial";
 }
 
@@ -65,10 +65,10 @@ function CalcularValorTotal() {
 
     for (var cont in imagens) {
         if (imagens[cont].name == "PoltronaEscolhida") {
-            imagens[cont].src = "imagens/puffselecionado.png";
+            imagens[cont].src = "imagens/puffreservado.png";
             imagens[cont].name = "PoltronaOcupada";
         } else if (imagens[cont].name == "PoltronaEscolhidaPreferencial") {
-            imagens[cont].src = "imagens/puffselecionado.png"
+            imagens[cont].src = "imagens/puffreservado.png"
             imagens[cont].name = "PoltronaOcupadaPreferencial";
         }
     }

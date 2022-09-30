@@ -1,7 +1,7 @@
 
 body{
     margin: 0;
-    background-color: black;
+    background-color: black !important;
 }
 
 ul{
@@ -16,13 +16,13 @@ nav{
     filter: opacity(75%);
 }
 a{
-    color: white;
-    text-decoration: none;
-    font-size: 23px;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 20px;
     
 }
 a:hover{
-    color:greenyellow;
+    color:greenyellow ;
 }
 nav, ul{
 display: flex;
@@ -31,7 +31,7 @@ flex-direction: row;
 }
 li{
     padding: 0 20px;
-    margin:auto;
+    margin:auto !important;
     
 }
 .logo{
@@ -42,6 +42,7 @@ li{
 .img-fluid{
     width: 100%;
     margin-top: -100px;
+    
 }
 .letras{
     font-size: 30px;
@@ -62,7 +63,7 @@ li{
     display: flex;
     flex-direction: row;
     padding-left: 30px;
-    margin-left: -10px;
+    margin-left: 380px;
     margin-top: -20px;
 }
 #div1 {
@@ -85,65 +86,50 @@ li{
     margin-top: -20px;
     margin-left: 60px;
 }
-section{
-    position: relative;  
-    height: 550px;
-    width: 1200px;
-    display: flex;
-    margin: auto;
-  }
- 
-  .swiper{
-    width: 1200px;
-  
-  }
-  
-  .card{
-    border-radius: 20px;
-    margin: 20px 0;
-    margin-top: 20px;
+.poster{
+    margin-top: -360px;
+    margin-left: 120px;
     
-  }
-  
-  .card .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
    
-  }
-  
-   section .card .image{
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    padding: 20px;
+}
+#filme{
+    width: 280px;
+    position: relative;
+}
+.title{
+    margin-left: 430px;
+    color: white !important;
+    font-size: 40px;
+    margin-top: -400px;
     
-    
-  } 
-  
-  section .card .image img{
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    transition: all 0.4s;
-    opacity: 60%;
-  
+}
+.subtitle{
+    margin-left: 430px;
+    width: auto;
+    color: white;
+    justify-content: initial;
+    margin-top: -30px;
+    font-size: 15px;
+    padding-right: 15px;
+}
+.classificacao{
+    border:2px; 
+    color: white;
+}
+.logo_meio {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
   
-  section .card .image img:hover{
-      transform: scale(1.07);
-      opacity: 100%;
+.Responsive-image{
+    width:600px;
+ 
   }
-  
-  .swiper-button-next, .swiper-button-prev{
-    opacity: 0.7;
-    color: #ffffff;
-    transition: all 0.3s ease;
-  }
-  .swiper-button-next:hover, .swiper-button-prev:hover{
-    opacity: 1;
-    color: #ffffff;
-  }
-
-  
+.seus_pedidos{
+    font-size: 30px;
+    font-family: "Oswald"; 
+    color:white;
+    text-align: center;
+    margin-top: 40px;
+}

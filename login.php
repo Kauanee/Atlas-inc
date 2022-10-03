@@ -6,14 +6,14 @@ $set_senha =$_POST["senha"];
 
 $comando = $pdo->prepare("SELECT cod_usuario, senha_usuario, login_usuario, perm_admin FROM usuario WHERE email_usuario = :email");
 
-$comando->bindValue(":email".$email);
-$comando-> 
+$comando->bindValue(":email",$email);
+$comando->execute();
 
-if($comando->rowCount()==1)
-{
+if($comando->rowCount() == 1){
     $resultado = $comando->fetch();
-    if($resultado['senha_usuario']== MDS($set_senha)){
-       header("Location:pageCadFilme.html");
+
+    if($resultado['senha_usuario'] == MD5($set_senha)){
+       header("Location:pageCadFilme.php");
 
        session_start();
        $_SESSION['cod_usuario'] = $resultado['cod_usuario'];

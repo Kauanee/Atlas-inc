@@ -1,8 +1,9 @@
 
 body{
     margin: 0;
-    background-color: black !important;
+    background-color: black  !important;
 }
+
 
 ul{
     list-style: none;
@@ -119,7 +120,10 @@ li{
 .logo_meio {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    width: 100px;
+    align-items: center;
+    margin-left: 700px;
+    margin-top: -50px;
   }
   
 .Responsive-image{
@@ -130,6 +134,16 @@ li{
     font-size: 30px;
     font-family: "Oswald"; 
     color:white;
+    margin-top: -450px;
+    margin-left: 650px;
+}
+
+.cinza{
+    width: 740px;
+    height: 400px;
+    background-color: rgb(121, 121, 121);
+    margin-top: 70px;
+    margin-left: 400px;
     text-align: center;
-    margin-top: 40px;
+    align-items: center;
 }

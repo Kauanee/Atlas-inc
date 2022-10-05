@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: black;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 350px;
+      }
+
+      .swiper-slide {
+       
+        
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      ul{
+    list-style: none;
+   
+}
+nav{
+    background-color: black;
+    padding: 0 20px;
+    justify-content: space-between;
+    height: 65px;
+    filter: opacity(75%);
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    
+}
+a:hover{
+    color:greenyellow;
+}
+nav, ul{
+display: flex;
+flex-direction: row;
+
+}
+li{
+    padding: 0 20px;
+    margin:auto;
+    
+}
+.logo{
+    padding: 5px;
+    height: 50px;
+    margin-top: 3px;
+}
+.img-fluid{
+    width: 100%;
+    margin-top: -100px;
+}
+.letras{
+    font-size: 30px;
+    margin-top: -170px;
+    color: white;
+    margin-left: 40px;
+}
+#font-face {
+     font-family: "Odor Mean Chey", serif; 
+     color: white;
+     font-size: 40px;
+     margin-top: -170px;
+     margin-left: 40px;
+}
+.descricao {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+#div1 {
+    font-family: "Odor Mean Chey", serif; 
+    color: white;
+    font-size: 20px; 
+    padding-left: 14px;  
+}
+#font-face1 {
+    font-family: "Oswald"; 
+    color: greenyellow;
+    font-size: 27px;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+#font-face2 {
+    font-family: "Oswald"; 
+    color: greenyellow;
+    font-size: 27px;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav>
+        <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código"> 
+        <ul>
+            <li>
+                <a href="catalogo.html">Filmes</a>
+            </li>
+            <li>
+                <a href="combo.html">Combos</a>
+                </li>
+                <li>
+                <a href="pagePerfil.html"> Perfil </a>
+                    </li>
+        </ul>
+    </nav>
+    <img src="imagens/aladin1.png" class="img-fluid" alt="Receitas de Código"> 
+<p id="font-face" >
+Aladdin
+</p>
+
+
+<div class="descricao">
+<div id="div1">
+    Musical
+</div>
+<div id="div1">
+    Fantasia
+</div>
+<div id="div1">
+    Romance
+</div>
+</div>
+
+<p id="font-face1">
+Em Cartaz
+</p>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme2.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme3.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme4.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme5.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme6.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme7.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme8.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme9.png"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <p id="font-face2">
+        Lançamentos
+      </p>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imagens/filme3.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme4.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme5.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 50,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

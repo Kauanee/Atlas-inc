@@ -122,3 +122,14 @@ header{
 {
     padding: 50px;
 }
+.imagem
+{
+    justify-content: center;
+    align-items: center;
+}
+.ponteiro
+{
+
+        justify-content: center;
+        align-items: center;
+}

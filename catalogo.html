@@ -1,410 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página Catálogo</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Catalogo de Filmes</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="catalogoFilme.css">
-    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link  rel="stylesheet" href="catalogoFilme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
 
-   
-</head>
-<body>
-        <nav>
-            <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código"> 
-            <ul>
-                <li>
-                    <a href="catalogo.html">Filmes</a>
+  <body>
+
+    <nav>
+        <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código"> 
+        <ul>
+            <li>
+                <a href="catalogo.html">Filmes</a>
+            </li>
+            <li>
+                <a href="combo.html">Combos</a>
                 </li>
                 <li>
-                    <a href="combo.html">Combos</a>
+                <a href="pagePerfil.html"> Perfil </a>
                     </li>
-                    <li>
-                    <a href="pagePerfil.html"> Perfil </a>
-                        </li>
-            </ul>
-        </nav>
-        <img src="imagens/aladin1.png" class="img-fluid" alt="Receitas de Código"> 
-   <p id="font-face" >
-    Aladdin
-   </p>
+        </ul>
+    </nav>
+    <img src="imagens/aladin1.png" class="img-fluid" alt="Receitas de Código"> 
+<p id="font-face" >
+Aladdin
+</p>
 
 
-   <div class="descricao">
-    <div id="div1">
-        Musical
-    </div>
-    <div id="div1">
-        Fantasia
-    </div>
-    <div id="div1">
-        Romance
-    </div>
-   </div>
+<div class="descricao">
+<div id="div1">
+    Musical
+</div>
+<div id="div1">
+    Fantasia
+</div>
+<div id="div1">
+    Romance
+</div>
+</div>
 
 <p id="font-face1">
-    Em Cartaz
+Em Cartaz
 </p>
-
-<section>
-    
-    <div class="swiper mySwiper container">
-      <div class="swiper-wrapper content">
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme1.png" style="width: 200px" >
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme2.png" style="width: 200px">
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme3.png" style="width: 200px" >
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme4.png" style="width: 200px" >
-            </div>  
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme5.jpg" style="width: 200px" >
-            </div>      
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme6.jpg" style="width: 200px" >
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme3.png" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme1.png" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme2.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme3.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme4.png"></div>
+        <div class="swiper-slide"><img src="imagens/filme5.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme6.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme7.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme8.jpg"></div>
+        <div class="swiper-slide"><img src="imagens/filme9.png"></div>
       </div>
-    </div>
-
-    <div class="swiper-button-next"></div>
+      <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
-  </section>
-
-  <p id="font-face2">
-    Lançamentos
-</p>
-
-<section>
-    
-    <div class="swiper mySwiper container">
-      <div class="swiper-wrapper content">
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme1.png" style="width: 200px" >
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme2.png" style="width: 200px" >
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme3.png" style="width: 200px">
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme4.png"style="width: 200px" >
-            </div>  
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme5.jpg" style="width: 200px">
-            </div>      
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme6.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme7.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg"style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme2.png" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-
-      </div>
     </div>
 
-    <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination-2"></div>
-  </section>
+    <p id="font-face2">
+        Lançamentos
+      </p>
 
-  <p id="font-face2">
-    Em breve
-</p>
-
-<section>
-    
-    <div class="swiper mySwiper container">
-      <div class="swiper-wrapper content">
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme1.png" style="width: 200px">
-            </div>
-          </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imagens/filme3.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme4.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme5.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme1.png"></div>
+          <div class="swiper-slide"><img src="imagens/filme7.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme6.jpg"></div>
         </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme2.png" style="width: 200px">
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme3.png" style="width: 200px">
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme4.png" style="width: 200px">
-            </div>  
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme2.png" style="width: 200px">
-            </div>      
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme6.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme7.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme7.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme6.jpg" style="width: 200px" >
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme3.png" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme4.png" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-        <div class="swiper-slide card">
-          <div class="card-content">
-            <div class="image">
-              <img src="imagens/filme8.jpg" style="width: 200px">
-            </div>               
-          </div>
-        </div>
-
-
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
 
-    <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-  </section>
+      <p id="font-face2">
+        Em breve
+      </p>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imagens/filme10.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme11.jfif"></div>
+          <div class="swiper-slide"><img src="imagens/filme12.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme13.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme14.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme15.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme16.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme7.jpg"></div>
+          <div class="swiper-slide"><img src="imagens/filme17.jpg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 5,
-      spaceBetween: 120,
-      slidesPerGroup: 5,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    
-  </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  
-
-</body>
-</html>
-
-</body>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 50,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>

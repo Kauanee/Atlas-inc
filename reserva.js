@@ -72,7 +72,10 @@ function CalcularValorTotal() {
             imagens[cont].name = "PoltronaOcupadaPreferencial";
         }
     }
+    document.cookie = 'valor' += total;
+    document.cookie = 'cadeiras' += acumulador
 }
+
 
 function Sair() {
     alert("Obrigado por nos visitar, tenha um bom filme!");

@@ -4,46 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PaginaCadastroCombo</title>
+    <link rel="stylesheet" href="estiloCadCombo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    
-        <main>
-                <div class="header-2">
-                    <div class="menu" >
-                        <ul>
-                            <li><a href="page1.html">Filmes</a></li>
-                            <li><a href="page2.html">Combos</a></li>
-                            <li><a href="page3.html">Perfil</a></li>
-                            <li><a href="pageCadFilme.html">Cadastrar Filme</a></li>
-                            <li><a href="pageCadCombo.html">Cadastrar Combo</a></li>
-                        </ul>
-                    </div>
-                </div>
-        </main>
 
-        <input type="file" id="meu_upload"></input><br>
-        <img id="imagem" src="Combo.png" width="100px" height="100px" onclick="trocarCombo();">
-        <input type="file" id="meu_upload"></input><br>
-        <img id="desc" onclick="trocarDescricao();">
-    
-        <div class="Botoes">
-            <div onclick="Inserir();">
-                INSERIR
-            </div>
-            
-            <div onclick="Excluir();">
-                EXCLUIR
-            </div>
-            
-            <div onclick="Alterar();">
-                ALTERAR
-            </div>
-            
-            <div onclick="Pesquisar();">
-                PESQUISAR
-            </div>
-        </div>
+    <body class="bg minhacor">
 
+
+
+        <nav>
+            <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
+            <ul>
+                <li>
+                    <a class="text-decoration-none cad" href="catalogo.html">Cadastrar Filme</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 coluna1">
+                <img id="logo" src="imagens//cineville.png" width="550px">
+                <a class="text-decoration-none">
+                    <b>Você é Administrador!!!</b>
+                </a>
+            </div>
+            <div class="col-md-6 col-xs-12 coluna2">
+                <div class="bg verde">
+                    <div class="bg preto">
+                            <div class="img">
+                                    <input type="file" id="meu_upload"></input><br>
+                                    <input type="file" id="meu_upload"></input><br>
+                                    <input type="file" id="meu_upload"></input><br>
+                            </div>
+
+                        <div class="caixa">
+                            <button type="submit" style="height: 40px; width:110px;" class="button">
+                                <b>Inserir</b>
+                            </button>
+                            <button type="submit" style="height: 40px; width:110px;" class="button">
+                                    <b>Alterar</b>
+                                </button>
+                                <button type="submit" style="height: 40px; width:110px;" class="button">
+                                        <b>Excluir</b>
+                                    </button>
+                         </div>
+                        </div>              
+             </div>    
+     </div> 
+            
+      
 </body>
 </html>

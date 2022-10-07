@@ -58,6 +58,9 @@ function CalcularValorTotal() {
 
     total = acumulador * 25;
 
+    document.cookie = "valor =" + String(total.toFixed(2));
+    document.cookie = "cadeiras =" + String(acumulador);
+
     if (total > 0)
         alert("Preço do Ingresso Unitário: R$25,00\n" +
             "Quantidade de Assentos Escolhidos: " + acumulador + "\n" +
@@ -72,9 +75,8 @@ function CalcularValorTotal() {
             imagens[cont].name = "PoltronaOcupadaPreferencial";
         }
     }
-    document.cookie = 'valor' += total;
-    document.cookie = 'cadeiras' += acumulador
 }
+
 
 
 function Sair() {

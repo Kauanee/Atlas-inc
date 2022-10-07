@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="DescFilm.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <script type="text/javascript" src="reserva.js"></script>
     <title>Page3</title>
 </head>
 
@@ -306,23 +306,22 @@
             <img src="imagens/tela.png" class="img-responsive tela" name="Tela">
             <hr>
 
-            
+            <form action="inserirPuff.php" method="POST">
                 <div class="row buttons">
                     <div class="col-xs-12">
                         <div class="col-md-4">
                             <button id="Liberar" class="btn btn-info">Liberar Poltronas</button>
                         </div>
-                        <form action="inserirPuff.php">
                         <div class="col-md-4">
-                            <button id="Calcular" onclick="CalcularValorTotal();"
+                            <button id="Calcular" onclick="CalcularValorTotal()" type="submit"
                                 class="btn btn-success">Finalizar Reserva</button>
                         </div>
-                        </form>
                         <div class="col-md-4">
                             <button id="Sair" class="btn btn-danger">Sair</button>
                         </div>
                     </div>
                 </div>
+            </form>
     </div>
     </center>
 
@@ -330,11 +329,6 @@
 
 
 </body>
-<script type="text/javascript" src="reserva.js"></script>
-
-
-
-
 
 
 

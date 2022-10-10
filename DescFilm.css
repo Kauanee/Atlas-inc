@@ -1,7 +1,7 @@
 
 body{
     margin: 0;
-    background-color: black !important;
+   background-color: black !important;
 }
 
 ul{
@@ -9,15 +9,18 @@ ul{
    
 }
 nav{
-    background-color: black;
-    padding: 0 20px;
-    justify-content: space-between;
-    height: 65px;
-    filter: opacity(75%);
+      background-color: black;
+      padding: 0 20px;
+      justify-content: space-between;
+      height: 65px;
+      filter: opacity(75%);
 }
 a{
-    color: white !important;
-    text-decoration: none !important;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 20px !important;
+  align-items: center !important;
+  margin-top: 45px !important;
     
 }
 a:hover{

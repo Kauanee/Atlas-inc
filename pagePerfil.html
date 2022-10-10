@@ -30,9 +30,14 @@
 
     <div class="row">
         <div class="col-md-6 col-xs-12 coluna1">
-
+                <input type="file" name="meu_upload" id="meu_upload">
+                <div class="img_perfil">
+                        <img id="imagem" src="imagens//profile.png" width="150px">
+                    <img id="imagemSelect" src="imagens/frame6.svg" class="img_perfil_edit" height="50px" width="50px">
+                </div>
+                </input>
            
-            <img id="imagem" src="imagens//profile.png" width="150px" onclick="trocaImagem();">
+           
 
             <img src="imagens//pipoquinha.png" width="400px" height="400px">
 
@@ -45,31 +50,31 @@
 
                         <label>Nome:</label>
                         <br>
-                        <input style="height: 20px; border-radius: 10px; " class="w-50 p-3" type="form-control"
+                        <input name="nome" style="height: 20px; border-radius: 10px; " class="w-50 p-3" type="form-control"
                             type="text" placeholder="Insira seu Nome">
                         <br>
                         <br>
-                        <label>Sobrenome:</label>
+                        <label>Data de Nascimento:</label>
                         <br>
-                        <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                            type="text" placeholder="Insira seu Sobrenome">
+                        <input name="datansc" style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                            type="date" placeholder="Insira sua Data de Nascimento">
                         <br>
                         <br>
                         <label>Email:</label>
                         <br>
-                        <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                        <input name="email" style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
                             type="email" placeholder="Insira seu Email">
                         <br>
                         <br>
                         <label>Senha:</label>
                         <br>
-                        <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                        <input name="senha"style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
                             type="password" placeholder="Insira sua senha">
                         <br>
                         <br>
                         <label>CPF:</label>
                         <br>
-                        <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                        <input name="cpf" style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
                             type="text" placeholder="Insira seu CPF">
                         <br>
                         <br>
@@ -78,14 +83,11 @@
                         
                         <button style="height: 50px; width:150px;" class="button" onclick="Atualizar();">
                             <b>Atualizar Dados</b>
-                        </button>
-
-                        
+                        </button> 
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 </html>

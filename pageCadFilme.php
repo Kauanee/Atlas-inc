@@ -13,54 +13,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estiloCadFilme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Página Inicial</title>
 </head>
 <body>
-    
-        <main>
-                <div class="header-2">
-                    <div class="menu" >
-                        <ul>
-                            <li><a href="page1.html">Filmes</a></li>
-                            <li><a href="page2.html">Combos</a></li>
-                            <li><a href="page3.html">Perfil</a></li>
-                            <li><a href="pageCadFilme.html">Admin</a></li>
-                        </ul>
+<nav>
+        <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
+        <ul>
+            <li>
+                <a href="catalogo.html">Filmes</a>
+            </li>
+            <li>
+                <a href="combo.html">Combos</a>
+            </li>
+            <li>
+                <a href="pagePerfil.html"> Perfil </a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="row">
+        <div class="col-md-6 col-xs-12 coluna1">
+            <img id="logo" src="imagens//cineville.png" width="550px">
+            <h1 class="bg cine">CineVille, trazendo o conforto e a magia do cinema que <br> você merece! </h1>
+            <img src="imagens//pipoquinha.png" width="400px" height="400px">
+        </div>
+        <div class="col-md-6 col-xs-12 coluna2">
+            <div class="bg verde">
+                <div class="bg preto">
+                    <div class="conteudo">
+
+                        <label class="bem"> Bem vindo Administrador! </label>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <form action="movieInsert.php" method="POST" enctype="multipart/form-data">
+                            <label>Nome do Filme:</label>
+                            <br>
+                            <input name="nomeFilme" style="height: 20px; border-radius: 10px" class="w-50 p-3"
+                                type="form-control" type="text" placeholder="Insire Nome do Filme!"/>
+                            <br>
+                            <br>
+                            <label>Classificação:</label>
+                            <br>
+                            <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                                name="classificacao" type="text" placeholder="Insira a Classificação!"/>
+                                <br>
+                            <br>
+                            <label>Descrição:</label>
+                            <br>
+                            <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                                name="descricao" type="text" placeholder="Insira a Descrição!"/>
+                                <br>
+                            <br>
+                            <label>Cartaz:</label>
+                            <br>
+                            <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                            type="file" name="cartaz" placeholder="Insira a Cartaz!"/>
+                                <br>
+                            <br>
+                            <label>Categoria:</label>
+                            <br>
+                            <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
+                                name="categoria" type="text" placeholder="Insira a Categoria,!"/>
+                                <br>
+                                <br>
+                            <input type="submit" value="Atualizar"/>
+                        </form>
                     </div>
                 </div>
-        </main>
-
-        <?php
-    //verifica se o usuario conectado é administrador para mostrar a mensagem.
-    if ($_SESSION['perm_admin'] == 1) {
-        echo '<p> Você é Administrador! </p>';
-    }
-    ?>
-
-        <input type="file" id="meu_upload"></input><br>
-        <img id="imagem" src="Filme.png" width="100px" height="100px" onclick="trocarFilme();">
-        <input type="file" id="meu_upload"></input><br>
-        <img id="desc" onclick="trocarDescricao();">
-        <input type="file" id="meu_upload"></input><br>
-        <img id="class" onclick="trocarClassificacao();">
-    
-        <div class="Botoes">
-            <div onclick="Inserir();">
-                INSERIR
-            </div>
-            
-            <div onclick="Excluir();">
-                EXCLUIR
-            </div>
-            
-            <div onclick="Alterar();">
-                ALTERAR
-            </div>
-            
-            <div onclick="Pesquisar();">
-                PESQUISAR
             </div>
         </div>
-
+    </div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 include("conexao.php");
 
 $email =$_POST["email"];
-$set_senha =$_POST["senha"];
+$set_senha = $_POST["senha"];
 
 $comando = $pdo->prepare("SELECT cod_usuario, senha_usuario, perm_admin FROM usuario WHERE email_usuario = :email");
 
@@ -18,23 +18,16 @@ if($comando->rowCount()==1)
         } else {
             header("Location:catalogo.html");
         }
-            
-            
-
        session_start();
        $_SESSION['cod_usuario'] = $resultado['cod_usuario'];
        $_SESSION['perm_admin'] = $resultado['perm_admin'];
        $_SESSION['loggedin'] = true;
 
     }else{
-        echo("Email incorreto!");
-        echo($email);
-        echo($set_senha);
-        echo(MD5($set_senha));
-
+        echo("Senha incorreta!");
     }
 }else{
- echo("Senha incorreta!");
+ echo("Email incorreta!");
 
 }
 

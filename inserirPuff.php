@@ -15,5 +15,7 @@
 
     $comando->execute();                               
 
+    unset($comando);
+    unset($pdo);
     header("Location:forpag.html");
 ?>

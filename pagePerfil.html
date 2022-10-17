@@ -13,31 +13,31 @@
 
 
 <body class="bg minhacor">
-        <nav>
-                <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código"> 
-                <ul>
-                    <li>
-                        <a href="catalogo.html">Filmes</a>
-                    </li>
-                    <li>
-                        <a href="combo.html">Combos</a>
-                        </li>
-                        <li>
-                        <a href="pagePerfil.html"> Perfil </a>
-                            </li>
-                </ul>
-            </nav>
+    <nav>
+        <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
+        <ul>
+            <li>
+                <a href="catalogo.html">Filmes</a>
+            </li>
+            <li>
+                <a href="combo.html">Combos</a>
+            </li>
+            <li>
+                <a href="pagePerfil.html"> Perfil </a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="row">
         <div class="col-md-6 col-xs-12 coluna1">
-                <input type="file" name="meu_upload" id="meu_upload">
-                <div class="img_perfil">
-                        <img id="imagem" src="imagens//profile.png" width="150px">
-                    <img id="imagemSelect" src="imagens/frame6.svg" class="img_perfil_edit" height="50px" width="50px">
-                </div>
-                </input>
-           
-           
+            <input type="file" name="meu_upload" id="meu_upload">
+            <div class="img_perfil">
+                <img id="imagem" src="imagens//profile.png" width="150px">
+                <img id="imagemSelect" src="imagens/frame6.svg" class="img_perfil_edit" height="50px" width="50px">
+            </div>
+            </input>
+
+
 
             <img src="imagens//pipoquinha.png" width="400px" height="400px">
 
@@ -47,47 +47,44 @@
                 <div class="bg preto">
                     <div class="conteudo">
 
-
-                        <label>Nome:</label>
-                        <br>
-                        <input name="nome" style="height: 20px; border-radius: 10px; " class="w-50 p-3" type="form-control"
-                            type="text" placeholder="Insira seu Nome">
-                        <br>
-                        <br>
-                        <label>Data de Nascimento:</label>
-                        <br>
-                        <input name="datansc" style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                            type="date" placeholder="Insira sua Data de Nascimento">
-                        <br>
-                        <br>
-                        <label>Email:</label>
-                        <br>
-                        <input name="email" style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                            type="email" placeholder="Insira seu Email">
-                        <br>
-                        <br>
-                        <label>Senha:</label>
-                        <br>
-                        <input name="senha"style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                            type="password" placeholder="Insira sua senha">
-                        <br>
-                        <br>
-                        <label>CPF:</label>
-                        <br>
-                        <input name="cpf" style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                            type="text" placeholder="Insira seu CPF">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        
-                        <button style="height: 50px; width:150px; font-style: Oswald" class="button" onclick="Atualizar();">
-                            <b>Atualizar Dados</b>
-                        </button> 
+                        <form action="atualizarperfil.php" method="POST">
+                            <label>Nome:</label>
+                            <br>
+                            <input name="nome" style="height: 20px; border-radius: 10px; " class="w-50 p-3"
+                                type="form-control" type="text" placeholder="Insira seu Nome">
+                            <br>
+                            <br>
+                            <label>Data de Nascimento:</label>
+                            <br>
+                            <input name="datansc" style="height: 20px; border-radius: 10px" class="w-50 p-3"
+                                type="form-control" type="date" placeholder="Insira sua Data de Nascimento">
+                            <br>
+                            <br>
+                            <label>Email:</label>
+                            <br>
+                            <input name="email" style="height: 20px; border-radius: 10px" class="w-50 p-3"
+                                type="form-control" type="email" placeholder="Insira seu Email">
+                            <br>
+                            <br>
+                            <label>Senha:</label>
+                            <br>
+                            <input name="senha" style="height: 20px; border-radius: 10px" class="w-50 p-3"
+                                type="form-control" type="password" placeholder="Insira sua senha">
+                            <br>
+                            <br>
+                            <label>CPF:</label>
+                            <br>
+                            <input name="cpf" style="height: 20px; border-radius: 10px" class="w-50 p-3"
+                                type="form-control" type="text" placeholder="Insira seu CPF">
+                            <br>
+                            <br>
+                            <input type="submit" value="Atualizar">
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

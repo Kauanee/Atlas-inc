@@ -16,4 +16,7 @@
     $comando->execute();                               
 
     header("Location:catalogo.html");
+
+    unset($comando);
+    unset($pdo);
 ?>

@@ -1,14 +1,20 @@
 <?php
     include("conexao.php");
 
+    $nomeFilme = $_POST["nomeFilme"];
+    $classificacao = $_POST["classificacao"];
+    $descricao = $_POST["descricao"];
+    $cartaz = $_FILE["cartaz"];
+    $categoria = $_POST["categoria"];
+
     $filme = $_POST["filme"];
-    $comando = $pdo -> prepare("INSERT INTO ingresso (puff_ingresso, filme_sessao, total_ingresso, fk_usuario) VALUES(:puff,:filme,:total,:usuario)");
-    $comando->bindValue(":puff",$puff); 
-    $comando->bindValue(":filme",$filme);                                      
-    $comando->bindValue(":total",$valortotal);  
-    $comando->bindValue(":usuario",$usuario);                        
+    $comando = $pdo -> prepare("INSERT INTO movies (nome_movies, classificacao_movies, descricao_movies, cartaz_movies, categoria_movies) VALUES(:nomeFilme,:classificacao,:cartaz,:categoria)");
+    $comando->bindValue(":nomeFilme",$nomeFilme); 
+    $comando->bindValue(":classificacao",$classificacao);                                      
+    $comando->bindValue(":cartaz",$cartaz);  
+    $comando->bindValue(":categoria",$categoria);                        
 
     $comando->execute();                               
 
-    header("Location:forpag.html");
+    header("Location:pageCadFilme.php");
 ?>

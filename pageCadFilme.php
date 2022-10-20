@@ -45,15 +45,14 @@
                 <div class="bg preto">
                     <div class="conteudo">
 
-                        <label class="bem"> Bem vindo Administrador! </label>
-                        <br>
+                        <label class="bem"> <b>Bem vindo Administrador!</b> </label>
                         <br>
                         <br>
                         <br>
                         <form action="movieInsert.php" method="POST" enctype="multipart/form-data">
                             <label>Nome do Filme:</label>
                             <br>
-                            <input name="nomeFilme" style="height: 20px; border-radius: 10px" class="w-50 p-3"
+                            <input name="filme" style="height: 20px; border-radius: 10px" class="w-50 p-3"
                                 type="form-control" type="text" placeholder="Insire Nome do Filme!"/>
                             <br>
                             <br>
@@ -71,8 +70,7 @@
                             <br>
                             <label>Cartaz:</label>
                             <br>
-                            <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                            type="file" name="cartaz" placeholder="Insira a Cartaz!"/>
+                            <input class="w-50 p-3" type="file" name="cartaz"/>
                                 <br>
                             <br>
                             <label>Categoria:</label>
@@ -81,7 +79,7 @@
                                 name="categoria" type="text" placeholder="Insira a Categoria,!"/>
                                 <br>
                                 <br>
-                            <input type="submit" value="Atualizar"/>
+                            <input type="submit" value="Inserir"/>
                         </form>
                     </div>
                 </div>

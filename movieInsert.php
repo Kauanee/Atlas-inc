@@ -1,20 +1,27 @@
 <?php
     include("conexao.php");
 
-    $nomeFilme = $_POST["nomeFilme"];
+    $nomeFilme = $_POST["filme"];
     $classificacao = $_POST["classificacao"];
     $descricao = $_POST["descricao"];
-    $cartaz = $_FILE["cartaz"];
     $categoria = $_POST["categoria"];
 
-    $filme = $_POST["filme"];
-    $comando = $pdo -> prepare("INSERT INTO movies (nome_movies, classificacao_movies, descricao_movies, cartaz_movies, categoria_movies) VALUES(:nomeFilme,:classificacao,:cartaz,:categoria)");
-    $comando->bindValue(":nomeFilme",$nomeFilme); 
+    $imagem = $_FILES['cartaz']; 
+    $extensao = $imagem['type'];
+    $conteudo = file_get_contents($imagem['tmp_name']);
+    $base64 = "data:".$extensao.";base64,".base64_encode($conteudo);
+
+
+    $comando = $pdo -> prepare("INSERT INTO movies(nome_movies, classificacao_movies, descricao_movies, cartaz_movies, categoria_movies) VALUES(:filme, :classificacao, :descricao, :conteudo, :categoria)");
+    $comando->bindValue(":filme",$nomeFilme); 
     $comando->bindValue(":classificacao",$classificacao);                                      
-    $comando->bindValue(":cartaz",$cartaz);  
-    $comando->bindValue(":categoria",$categoria);                        
+    $comando->bindValue(":descricao",$descricao);  
+    $comando->bindValue(":categoria",$categoria);
+    
+    $comando->bindValue(":conteudo", $base64);
 
-    $comando->execute();                               
+    $comando->execute();                              
 
-    header("Location:pageCadFilme.php");
+    unset($comando);
+    unset($pdo);
 ?>

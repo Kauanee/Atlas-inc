@@ -27,7 +27,7 @@ if($comando->rowCount()==1)
         echo("Senha incorreta!");
     }
 }else{
- echo("Email incorreta!");
+ echo("Email incorreto!");
 
 }
 

@@ -23,13 +23,13 @@
         <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
         <ul>
             <li>
-                <a href="catalogo.html">Filmes</a>
+                <a href="pageCadFilme.php">Cadastrar Filmes</a>
             </li>
             <li>
-                <a href="combo.html">Combos</a>
+                <a href="pageCadCombo.html">Cadastrar Combos</a>
             </li>
             <li>
-                <a href="pagePerfil.html"> Perfil </a>
+                <a href="pageListaAdm.html">Verificar Perfis</a>
             </li>
         </ul>
     </nav>

@@ -58,7 +58,7 @@
 
         include("selectMovies.php");
         foreach ($listar_filmes as $linha) { 
-          echo '<div class="swiper-slide" id="1"><img src="' .$linha['nome_movies'].$linha['classificacao_movies'].$linha['descricao_movies'].$linha['conteudo'].'" ></div>';
+          echo '<a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><div class="swiper-slide" id="1"><img src="' .$linha['cartaz_movies'].'" ></div></a>';
         }
         ?>       
       </div>

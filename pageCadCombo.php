@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    // Verifique se o usuário está logado, se não, redirecione-o para uma página de login
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+        header("location: login.html");
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +19,17 @@
     <title>Página Cadastro Combos</title>
 </head>
 <body>
-<nav>
+    <nav>
         <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
         <ul>
             <li>
-                <a href="catalogo.html">Filmes</a>
+                <a href="pageCadFilme.php">Cadastrar Filmes</a>
             </li>
             <li>
-                <a href="combo.html">Combos</a>
+                <a href="pageCadCombo.html">Cadastrar Combos</a>
             </li>
             <li>
-                <a href="pagePerfil.html"> Perfil </a>
+                <a href="pageListaAdm.html">Verificar Perfis</a>
             </li>
         </ul>
     </nav>
@@ -43,14 +52,14 @@
                         <form action="comboInsert.php" method="POST" enctype="multipart/form-data">
                             <label>Nome do combo:</label>
                             <br>
-                            <input name="nomeCombo" style="height: 20px; border-radius: 10px" class="w-50 p-3"
-                                type="form-control" type="text" placeholder="Insire Nome do Filme!"/>
+                            <input name="tamanhoCombo" style="height: 20px; border-radius: 10px" class="w-50 p-3"
+                                type="form-control" type="text" placeholder="Insira o tamanho do combo!"/>
                             <br>
                             <br>
                             <label>Preço do combo:</label>
                             <br>
                             <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                                name="precoCombo" type="text" placeholder="Insira a Classificação!"/>
+                                name="precoCombo" type="text" placeholder="Insira o preço do combo!"/>
                                 <br>
                             <br>
                             

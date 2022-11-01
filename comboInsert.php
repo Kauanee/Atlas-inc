@@ -18,7 +18,9 @@
 
     $comando->bindValue(":conteudo", $base64);
 
-    $comando->execute();                              
+    $comando->execute();   
+    
+    header("location:pageCadCombo.php");
 
     unset($comando);
     unset($pdo);

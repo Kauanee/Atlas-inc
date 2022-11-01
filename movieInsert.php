@@ -22,6 +22,8 @@
 
     $comando->execute();                              
 
+    header("location:pageCadFilme.php");
+
     unset($comando);
     unset($pdo);
 ?>

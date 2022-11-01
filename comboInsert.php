@@ -1,8 +1,8 @@
 <?php
     include("conexao.php");
 
-    $tamanhoCombo = $_POST["tamanhoCombo"];
-    $precoCombo = $_POST["precoCombo"];
+    $nomeCombo = $_POST["tamanhoCombo"];
+    $preco_combo = $_POST["precoCombo"];
 
     $imagem = $_FILES['ImagemCombo']; 
     $extensao = $imagem['type'];
@@ -10,9 +10,10 @@
     $base64 = "data:".$extensao.";base64,".base64_encode($conteudo);
 
 
-    $comando = $pdo -> prepare("INSERT INTO movies (nome_combo, preco_combo,imagem_combo) VALUES(:tamanhoCombo, :precoCombo, :conteudo)");
+
+    $comando = $pdo -> prepare("INSERT INTO combo(tamanho_combo,preco_combo,imagem_combo) VALUES(:tamanhoCombo,:precoCombo,:conteudo)");
     $comando->bindValue(":tamanhoCombo",$nomeCombo); 
-    $comando->bindValue(":precoCombo",$precoCombo);                                      
+    $comando->bindValue(":precoCombo",$preco_combo);                                      
    
 
     $comando->bindValue(":conteudo", $base64);

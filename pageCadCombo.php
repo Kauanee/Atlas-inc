@@ -26,7 +26,7 @@
                 <a href="pageCadFilme.php">Cadastrar Filmes</a>
             </li>
             <li>
-                <a href="pageCadCombo.html">Cadastrar Combos</a>
+                <a href="pageCadCombo.php">Cadastrar Combos</a>
             </li>
             <li>
                 <a href="pageListaAdm.html">Verificar Perfis</a>
@@ -50,7 +50,7 @@
                         <br>
                         <br>
                         <form action="comboInsert.php" method="POST" enctype="multipart/form-data">
-                            <label>Nome do combo:</label>
+                            <label>Tamanho do combo:</label>
                             <br>
                             <input name="tamanhoCombo" style="height: 20px; border-radius: 10px" class="w-50 p-3"
                                 type="form-control" type="text" placeholder="Insira o tamanho do combo!"/>

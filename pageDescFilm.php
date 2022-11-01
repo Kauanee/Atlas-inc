@@ -1,3 +1,28 @@
+<?php
+    include("conexao.php");
+
+    $codigo = $_GET["codigo"];
+
+    //comando sql.
+    $comando = $pdo->prepare("SELECT cod_movies, nome_movies, classificacao_movies, descricao_movies, cartaz_movies, categoria_movies  FROM movies WHERE cod_movies = :codigo");
+    //executa a consulta no banco de dados.
+    $comando->bindValue(":codigo",$codigo);
+
+    $comando->execute();
+
+    //Verifica se existe pelo menos um registro na tabela.
+    if($comando->rowCount() >= 1)
+    {
+        //o fetch() transforma o retorno em uma matriz (Use quando você para um registro ou mais, ou seja, uma ou múltiplas linhas da tabela).
+        $listar_filme = $comando->fetch();
+    }else{
+        echo("Não há Filmes.");
+    }
+    //unset($comando);
+    //unset($pdo);
+
+    //header("location:pageDescFilm.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,10 +61,12 @@
 
 
     <div class="poster ">
-        <img id="filme" src="imagens/filme2.png">
+        <img id="filme" src="imagens/cartazaladin.png">
     </div>
 
-    <p class="title ">Aladdin</p>
+    <div class="title ">        <?php
+            $listar_filme['nome_movies'];
+        ?></div>
     <div class="descricao">
         <div id="div1">
             Musical
@@ -51,15 +78,22 @@
             Romance
         </div>
     </div>
-    <p class="subtitle">Aladdin (Mena Massoud) é um jovem ladrão que vive de pequenos roubos em Agrabah. Um dia, ele
-        ajuda uma jovem a recuperar um
-        valioso bracelete, sem saber que ela na verdade é a princesa Jasmine (Naomi Scott). Aladdin logo fica
-        interessado nela, que diz ser a criada da princesa.
-        Ao visitá-la em pleno palácio e descobrir sua identidade, ele é capturado por Jafar (Marwan Kenzari), o
-        grão-vizir do sultanato, que deseja que ele
-        recupere uma lâmpada mágica, onde habita um gênio (Will Smith) capaz de conceder três desejos ao seu dono.</p>
+
+    <div class="subtitle">
+        <?php
+            $listar_filme['descricao_movies'];
+        ?>
+    </div>
 
     <div class="classiificacao">10</div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <div class="cadeiras">

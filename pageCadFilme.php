@@ -26,11 +26,12 @@
                 <a href="pageCadFilme.php">Cadastrar Filmes</a>
             </li>
             <li>
-                <a href="pageCadCombo.html">Cadastrar Combos</a>
+                <a href="pageCadCombo.php">Cadastrar Combos</a>
             </li>
             <li>
-                <a href="pageListaAdm.html">Verificar Perfis</a>
+                <a href="telalista.php">Verificar Perfis</a>
             </li>
+            
         </ul>
     </nav>
 

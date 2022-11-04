@@ -1,7 +1,8 @@
 
 body{
     margin: 0;
-    background-color:black !important;
+    background-color:black;
+    color: white;
 }
 
 
@@ -59,8 +60,10 @@ li{
 .cinza{
     width: 800px;
     height: 400px;
-    background-color: rgb(121, 121, 121);
     justify-content: center !important;
     align-items: center !important;
     margin-left: 425px !important; 
+}
+.txt{
+    color: white !important;
 }

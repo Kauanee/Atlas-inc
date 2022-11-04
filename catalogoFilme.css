@@ -15,7 +15,7 @@ body {
 
 .swiper {
   width: 90%;
-  height: auto;
+  height: 400px;
 }
 
 .swiper-slide {
@@ -50,12 +50,7 @@ body {
   opacity: 60%;
   
 }
-.swiper img:hover{
-  width: 400px;
-  height: 400px;
-  opacity: 100%;
- transform: scale(1.1);
-}
+
 
 ul{
 list-style: none;

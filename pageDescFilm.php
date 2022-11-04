@@ -20,7 +20,8 @@
     }
     //unset($comando);
     //unset($pdo);
-
+    //print_r($listar_filme);
+    //die();
     //header("location:pageDescFilm.php");
 ?>
 <!DOCTYPE html>
@@ -29,14 +30,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página Catálogo</title>
+    <title>Filme <?php echo $listar_filme['nome_movies']?></title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="DescFilm.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script type="text/javascript" src="reserva.js"></script>
-    <title>Page3</title>
 </head>
 
 <body>
@@ -60,13 +60,15 @@
 
 
 
-    <div class="poster ">
-        <img id="filme" src="imagens/cartazaladin.png">
+    <div class="poster"> 
+            <img id="filme" src=" <?php echo $listar_filme['cartaz_movies'];?>">
+
     </div>
 
-    <div class="title ">        <?php
-            $listar_filme['nome_movies'];
+    <div class="title">        <?php
+            echo $listar_filme['nome_movies'];
         ?></div>
+        <br>
     <div class="descricao">
         <div id="div1">
             Musical
@@ -81,11 +83,15 @@
 
     <div class="subtitle">
         <?php
-            $listar_filme['descricao_movies'];
+            echo $listar_filme['descricao_movies'];
         ?>
     </div>
 
-    <div class="classiificacao">10</div>
+    <div class="classiificacao"> 
+    <?php
+            echo $listar_filme['classificacao_movies'];
+        ?>
+    </div>
 
 
     <br>

@@ -54,13 +54,15 @@
   <form action="selectMovies.php" method="POST" enctype="multipart/form-data">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <?php 
-
-        include("selectMovies.php");
-        foreach ($listar_filmes as $linha) { 
-          echo '<a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><div class="swiper-slide" id="1"><img src="' .$linha['cartaz_movies'].'" ></div></a>';
-        }
-        ?>       
+          <?php 
+            include("selectMovies.php");
+            $id = 0;
+            foreach ($listar_filmes as $linha) { 
+              echo '<a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><div class="swiper-slide" id="'.$id.'"><img height="100px" src="' .$linha['cartaz_movies'].'" ></div></a>';
+              $id += 1;
+            };
+            
+    ?> 
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -119,8 +121,8 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 5,
-      spaceBetween: 50,
+      slidesPerView: 3,
+      spaceBetween: 70,
       slidesPerGroup: 5,
       loop: true,
       loopFillGroupWithBlank: true,

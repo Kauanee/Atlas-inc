@@ -16,7 +16,7 @@ if($comando->rowCount()==1)
         if ($resultado['perm_admin'] == 1) {
             header("Location:pageCadFilme.php");
         } else {
-            header("Location:catalogo.html");
+            header("Location:catalogo.php");
         }
        session_start();
        $_SESSION['cod_usuario'] = $resultado['cod_usuario'];

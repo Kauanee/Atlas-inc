@@ -1,12 +1,9 @@
-
 body{
     margin: 0;
     background-color:black !important;
     color: white;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
-
-
 ul{
     list-style: none;
    
@@ -57,23 +54,12 @@ li{
     text-align: center;
     margin-top: 30px;
 }
-
-.cinza{
-    background-color: gray;
+.voltar
+{
+    font-size: 16px;
+}
+.formulario
+{
     justify-content: center !important;
     align-items: center !important;
-}
-.txt{
-    color: white !important;
-}
-table{
-    justify-content: center;
-}
-.row{
-    justify-content: center !important;
-    align-items: center !important;
-}
-.txtbotton{
-    color:black;
-    font-size: 17px;
 }

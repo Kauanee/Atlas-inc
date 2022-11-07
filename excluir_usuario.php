@@ -4,7 +4,7 @@
     $codigo = $_GET['codigo'];
     
     //comando sql.
-    $comando = $pdo->prepare("DELETE FROM usuario WHERE pk_usuario = :codigo;");
+    $comando = $pdo->prepare("DELETE FROM usuario WHERE cod_usuario = :codigo;");
 
     //insere valores das variaveis no comando sql.
     $comando->bindValue(':codigo',$codigo);
@@ -13,7 +13,7 @@
     $comando->execute();
 
     //redireciona para a pagina informada.
-    header("location:informacoes_usuario.php");
+    header("location:telalista.php");
 
     //Fecha declaração e conexão.
     unset($comando);

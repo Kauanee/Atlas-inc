@@ -20,21 +20,33 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 </head>
 <body>
-        <nav>
-            <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código"> 
-    
-        </nav>
+<nav>
+        <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
+        <ul>
+            <li>
+                <a href="pageCadFilme.php">Cadastrar Filmes</a>
+            </li>
+            <li>
+                <a href="pageCadCombo.php">Cadastrar Combos</a>
+            </li>
+            <li>
+                <a href="telalista.php">Verificar Perfis</a>
+            </li>
+            
+        </ul>
+    </nav>
 <div class="logo_meio">
         <img src="imagens/cineville.png">
     </div>
 
+    <div class="row">
+        <div class="col-md-11 col-xs-12 coluna1">
+
     <div class="seus_pedidos">
-    Listagem
+    Listagem de Usuários
     </div> 
         <div class="cinza">
-        
-        <h3>Listar Usuários:</h3>
-    <table border="1">
+    <table border="1" class="table table-bordered table-striped">
         <thead>
             <tr>
                 <th class="txt">Código</th>
@@ -62,12 +74,12 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                         <td class="txt"> <?php echo $linha['nome_usuario']; ?></td>
                         <td class="txt"> <?php echo $linha['cpf']; ?></td>
                         <td class="txt"> <?php echo $linha['data_nascimento']; ?></td>
-                        <td class="txt"> <a href="editar.php?codigo=<?php echo $linha['pk_usuario'];?> ">
-                                <input class="txt" type="button" value="Editar">
+                        <td class="txt"> <a href="editar.php?codigo=<?php echo $linha['cod_usuario'];?> ">
+                                <input class="txtbotton" type="button" value="Editar">
                             </a>
                         </td>
-                        <td> <a href="excluir_usuario.php?codigo=<?php echo $linha['pk_usuario'];?> ">
-                                <input class="txt" type="button" value="Excluir">
+                        <td> <a href="excluir_usuario.php?codigo=<?php echo $linha['cod_usuario'];?> ">
+                                <input class="txtbotton" type="button" value="Excluir">
                             </a>
                         </td>
                     </tr>
@@ -76,7 +88,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             ?>
         </tbody>
     </table>
-
+        </div>
+        </div>
         </div>
 </body>
 </html>

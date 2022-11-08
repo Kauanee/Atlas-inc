@@ -40,25 +40,23 @@
 </head>
 
 <body>
+   
+<nav>
+    <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
     <ul>
-        <li>
-            <a class="text-decoration-none" href="catalogo.html">Filmes</a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="combo.html">Combos</a>
-        </li>
-        <li>
-            <a class="text-decoration-none" href="pagePerfil.html"> Perfil</a>
-        </li>
+      <li>
+        <a href="catalogo.php">Filmes</a>
+      </li>
+      <li>
+        <a href="combo.html">Combos</a>
+      </li>
+      <li>
+        <a href="pagePerfil.html"> Perfil </a>
+      </li>
     </ul>
-</nav>
-
-
-
-    <img src="imagens/aladin1.png" class="img-fluid opacity-100">
-
-
-
+  </nav>
+  <img src="imagens/aladin1.png" class="img-fluid" alt="Receitas de Código">
+  
 
     <div class="poster"> 
             <img id="filme" src=" <?php echo $listar_filme['cartaz_movies'];?>">
@@ -70,15 +68,9 @@
         ?></div>
         <br>
     <div class="descricao">
-        <div id="div1">
-            Musical
-        </div>
-        <div id="div1">
-            Fantasia
-        </div>
-        <div id="div1">
-            Romance
-        </div>
+       <?php
+            echo $listar_filme['categoria_movies'];
+        ?>
     </div>
 
     <div class="subtitle">

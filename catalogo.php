@@ -56,11 +56,14 @@
       <div class="swiper-wrapper">
           <?php 
             include("selectMovies.php");
-            $id = 0;
+           
             foreach ($listar_filmes as $linha) { 
-              echo '<a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><div class="swiper-slide" id="'.$id.'"><img height="100px" src="' .$linha['cartaz_movies'].'" ></div></a>';
-              $id += 1;
-            };
+              echo '
+              <div class="swiper-slide">
+                <a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><img style:"height:auto" src="' .$linha['cartaz_movies'].'" ></a>
+              </div>';
+            
+            }
             
     ?> 
       </div>
@@ -73,24 +76,29 @@
   <p id="font-face2">
     Lançamentos
   </p>
-
   <form action="selectMovies.php" method="POST" enctype="multipart/form-data">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" name="" id="10"></div>
-        <div class="swiper-slide" name="" id="11"></div>
-        <div class="swiper-slide" name="" id="12"></div>
-        <div class="swiper-slide" name="" id="13"></div>
-        <div class="swiper-slide" name="" id="14"></div>
-        <div class="swiper-slide" name="" id="15"></div>
-        <div class="swiper-slide" name="" id="16"></div>
-        <div class="swiper-slide" name="" id="17"></div>
+          <?php 
+            include("selectMovies.php");
+           
+            foreach ($listar_filmes as $linha) { 
+              echo '
+              <div class="swiper-slide">
+                <a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><img style:"height:auto  height:auto;" src="' .$linha['cartaz_movies'].'" ></a>
+              </div>';
+            
+            }
+            
+    ?> 
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
   </form>
+
+  
 
   <p id="font-face2">
     Em breve
@@ -121,9 +129,9 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 70,
-      slidesPerGroup: 5,
+      slidesPerGroup: 4,
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {

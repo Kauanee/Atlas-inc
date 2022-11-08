@@ -31,6 +31,9 @@
             <li>
                 <a href="telalista.php">Verificar Perfis</a>
             </li>
+            <li>
+                <a href="pageListaFilmes.php">Listar Filmes</a>
+            </li>
         </ul>
     </nav>
 

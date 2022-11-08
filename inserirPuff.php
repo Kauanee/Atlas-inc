@@ -17,5 +17,5 @@
 
     unset($comando);
     unset($pdo);
-    header("Location:forpag.html");
+    header("Location:forpag.php");
 ?>

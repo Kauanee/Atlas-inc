@@ -21,11 +21,11 @@
                     <a class="text-decoration-none" href="catalogo.html">Filmes</a>
             </li>
             <li>
-                        <a class="text-decoration-none" href="combo.html">Combos</a>
+                 <a class="text-decoration-none" href="combo.html">Combos</a>
             </li>
             <li>
-                        <a class="text-decoration-none" href="pagePerfil.html"> Perfil </a>
-                    </li>
+                  <a class="text-decoration-none" href="pagePerfil.html"> Perfil </a>
+            </li>
         </ul>
     </nav>
 
@@ -45,28 +45,28 @@
                         <br>
                         <br>
 
-                        <a href="pagamentoPix.html">
-                        <button style="height: 50px; width:200px;" class="button" onclick="Pix();">
+                     
+                        <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('pix');">
                                 <b>Pix</b>
                         </button>
-                        </a>
+                     
 
                         <br>
                         <br>
                         <br>
-                        <a href="PagamentoBoleto.html">
-                        <button style="height: 50px; width:200px;" class="button" onclick="Boleto();">
+                      
+                        <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('boleto');">
                                     <b>Boleto</b>
                         </button>
-                        </a>
+        
                         <br>
                         <br>
                         <br>
-                        <a href="pagamentoCartao.html">
-                        <button style="height: 50px; width:200px;" class="button" onclick="Cartao();">
+                       
+                        <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('credito');">
                               <b>Cartão de Crédito</b>
                         </button>
-                    </a>
+               
                         <br>
                         <br>
                         <br>
@@ -82,5 +82,10 @@
     </div>
 
 </body>
+<script>
+    function formadepagamento(forma){
+        window.open("insertformapag.php?tipo="+forma,"_self");
+    }
+    </script>
 
 </html>

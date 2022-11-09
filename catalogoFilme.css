@@ -13,10 +13,7 @@ body {
   padding: 0;
 }
 
-.swiper {
-  width: 90%;
-  height: 400px;
-}
+
 
 .swiper-slide {
   display: -webkit-box;
@@ -42,13 +39,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.swiper img{
-  width: 100%;
-  height: auto;
-  opacity: 60%;
-  
 }
 
 
@@ -80,7 +70,7 @@ flex-direction: row;
 
 }
 li{
-padding: 0 20px;
+padding: 0 20px !important;
 margin:auto;
 
 }

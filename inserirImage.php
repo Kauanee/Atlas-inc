@@ -19,7 +19,7 @@
     $comando->execute();
 
     //redireciona para a pagina informada.
-    header("Location:pagePerfil.php");
+    header("Location:pag.php");
 
     //Fecha declaração e conexão.
     unset($comando);

@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Verifique se o usuário está logado, se não, redirecione-o para uma página de login
+
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.html");
     exit;
@@ -65,9 +65,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <?php
             include("listar_usuarios.php");
 
-            //verifica se a variável tem os valores da tabela.
             if (!empty($lista_usuarios)) {
-                //seleciona linha por linha.
+             
                 foreach ($lista_usuarios as $linha) { ?>
                     <tr>
                         <td class="txt"> <?php echo $linha['cod_usuario']; ?></td>

@@ -3,14 +3,15 @@
 
     session_start();
     $pag = $_GET["tipo"];
-    $cod_cliente=$_SESSION["cod_usuario"];
+    $cod_cliente = $_SESSION["cod_usuario"];
     $comando = $pdo -> prepare("INSERT INTO tipo_pagamento(pag,id_usuario) VALUES(:p,:u)");  
  
-    
-    
     $comando->bindValue(":p",$pag);    
     $comando->bindValue(":u",$cod_cliente);  
     $comando->execute();
+
+    unset($comando);
+    unset($pdo);
 
     if($pag == "pix"){
         header("Location:pagamentoPix.html");
@@ -21,9 +22,5 @@
     if($pag == "credito"){
         header("Location:pagamentoCartao.html");
     }
- 
-
-
-    unset($comando);
-    unset($pdo);
+    
     ?>

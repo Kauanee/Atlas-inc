@@ -56,9 +56,9 @@
             <?php
             include("listar_filmes.php");
 
-            //verifica se a variável tem os valores da tabela.
+         
             if (!empty($lista_movies)) {
-                //seleciona linha por linha.
+              
                 foreach ($lista_movies as $linha) { ?>
                     <tr>
                         <td class="txt"> <?php echo $linha['cod_movies']; ?></td>

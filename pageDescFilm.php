@@ -3,26 +3,20 @@
 
     $codigo = $_GET["codigo"];
 
-    //comando sql.
     $comando = $pdo->prepare("SELECT cod_movies, nome_movies, classificacao_movies, descricao_movies, cartaz_movies, categoria_movies  FROM movies WHERE cod_movies = :codigo");
-    //executa a consulta no banco de dados.
+
     $comando->bindValue(":codigo",$codigo);
 
     $comando->execute();
 
-    //Verifica se existe pelo menos um registro na tabela.
+    
     if($comando->rowCount() >= 1)
     {
-        //o fetch() transforma o retorno em uma matriz (Use quando você para um registro ou mais, ou seja, uma ou múltiplas linhas da tabela).
+       
         $listar_filme = $comando->fetch();
     }else{
         echo("Não há Filmes.");
     }
-    //unset($comando);
-    //unset($pdo);
-    //print_r($listar_filme);
-    //die();
-    //header("location:pageDescFilm.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -124,7 +118,7 @@
         </center>
         <hr>
         <center>
-            <!--1ª Fileira-->
+          
             <div class="row ">
                 <div class="col-xs-12 ">
                     <div class="col-md-1 ">
@@ -178,7 +172,7 @@
                 </div>
             </div>
             <br />
-            <!--2ª Fileira-->
+            
             <div class="row">
                 <div class="col-xs-12">
                     <div class="col-md-1 col-md-offset-1">
@@ -216,7 +210,7 @@
                 </div>
             </div>
             <br />
-            <!--3ª Fileira-->
+           
             <div class="row">
                 <div class="col-xs-12">
                     <div class="col-md-1 col-md-offset-1">
@@ -254,7 +248,7 @@
                 </div>
             </div>
             <br />
-            <!--4ª Fileira-->
+          
             <div class="row">
                 <div class="col-xs-12">
                     <div class="col-md-1 col-md-offset-1">
@@ -292,7 +286,7 @@
                 </div>
             </div>
             <br />
-            <!--5ª Fileira-->
+           >
             <div class="row rodape">
                 <div class="col-xs-12">
                     <div class="col-md-1 col-md-offset-1">

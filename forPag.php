@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-md-6 col-xs-12 coluna1">
             <img id="logo" src="imagens//cineville.png" width="550px">
-            <img src="imagens//forma.png" width="100px" >
+            <img src="imagens//pipoquinha.png" width="420px" >
         </div>
         <div class="col-md-6 col-xs-12 coluna2">
             <div class="bg verde">

@@ -7,6 +7,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.html");
     exit;
 }
+    include("listar_filme.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,31 +34,29 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </div> 
     <div class="row justify-content-center align-items-centers mt-5">
         <div class="col-mx-auto text-center">
-
     <div class="formulario">
     <form action="editar_filmes.php?codigo=<?php echo $_GET['codigo'];?>" method="POST" enctype="multipart/form-data">
         <label class="text-light">Nome:</label>
         <br>
-        <input type="text" style="width:300px;" class="text-center" name="nome" value="<?php echo $mvoies['nome_movies']?>">
+        <input type="text" style="width:300px;" class="text-center" name="nome" value="<?php echo $movies['nome_movies'];?>">
         <br>
         <label class="text-light">Descrição:</label>
         <br>
-        <input type="text" style="width:300px;" class="text-center" name="descricao" value="<?php echo $movies['descricao_movies']?>">
+        <input type="text" style="width:300px;" class="text-center" name="descricao" value="<?php echo $movies['descricao_movies'];?>">
         <br>
         <label class="text-light">Categoria:</label>
         <br>
-        <input type="text" style="width:300px;" class="text-center" name="categoria" value="<?php echo $movies['categoria_movies']?>">
+        <input type="text" style="width:300px;" class="text-center" name="categoria" value="<?php echo $movies['categoria_movies'];?>">
         <br>
         <label class="text-light">Classificação:</label>
         <br>
-        <input type="text" style="width:300px;" class="text-center" name="classificacao" value="<?php echo $movies['classificacao_movies']?>">
+        <input type="text" style="width:300px;" class="text-center" name="classificacao" value="<?php echo $movies['classificacao_movies'];?>">
         <br> <br>
         <input type="file" name="imagem" multiple accept="image/*"> 
         <br><br>
-        <input type="submit" value="Atualizar" name="submit">
+        <input type="submit" class="btn btn-outline-light" value="Atualizar" name="submit">
     </form>
-    <br>
-    <a href="pageListaFilmes.php" class="voltar">Voltar</a>
+    <a href="pageListaFilmes.php" class="btn btn-outline-light">Voltar</a>
 </div>
 </div>
 </div>

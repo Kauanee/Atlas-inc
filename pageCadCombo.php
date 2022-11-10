@@ -70,7 +70,7 @@
                             <input class="w-50 p-3" type="file" name="ImagemCombo"/>
                                 <br>
                             <br>
-                            <input type="submit" value="Inserir"/>
+                            <input type="submit" class="btn btn-outline-light" value="Inserir"/>
                         </form>
                     </div>
                 </div>

@@ -49,20 +49,16 @@
                         <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('pix');">
                                 <b>Pix</b>
                         </button>
-                     
-
                         <br>
                         <br>
                         <br>
                       
                         <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('boleto');">
                                     <b>Boleto</b>
-                        </button>
-        
+                        </button>        
                         <br>
                         <br>
                         <br>
-                       
                         <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('credito');">
                               <b>Cartão de Crédito</b>
                         </button>

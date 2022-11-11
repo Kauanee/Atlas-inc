@@ -18,7 +18,7 @@
     //comando sql.
     $comando = $pdo->prepare("UPDATE movies SET nome_movies=:nome, classificacao_movies=:classi, descricao_movies=:descricao, cartaz_movies=:imagem, categoria_movies=:categoria WHERE cod_movies = :codigo;");
 
-    //insere valores das variaveis no comando sql.
+
     $comando->bindValue(':codigo',$codigo);
     $comando->bindValue(':nome',$nome);
     $comando->bindValue(':classi',$classificacao);

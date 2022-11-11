@@ -51,7 +51,6 @@
                         <label class="bem"> <b>Bem vindo Administrador!</b> </label>
                         <br>
                         <br>
-                        <br>
                         <form action="movieInsert.php" method="POST" enctype="multipart/form-data">
                             <label>Nome do Filme:</label>
                             <br>
@@ -78,11 +77,11 @@
                             <br>
                             <label>Categoria:</label>
                             <br>
-                            <input style="height: 20px; border-radius: 10px" class="w-50 p-3" type="form-control"
-                                name="categoria" type="text" placeholder="Insira a Categoria,!"/>
+                            <input style="height: 20px; border-radius: 10px" class="w-50 p-3 " type="form-control"
+                                name="categoria" type="text" placeholder="Insira a Categoria!"/>
                                 <br>
                                 <br>
-                            <input type="submit" value="Inserir"/>
+                            <input type="submit" class="btn btn-outline-light" value="Inserir"/>
                         </form>
                     </div>
                 </div>

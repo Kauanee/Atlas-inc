@@ -143,9 +143,6 @@
         prevEl: ".swiper-button-prev",
       },
     }
-
-
-
     );
   </script>
 </body>

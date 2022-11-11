@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pagina Perfil</title>
-    <link rel="stylesheet" href="estilo_perfil.css">
+    <link rel="stylesheet" href="estiloperfil.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -31,16 +31,21 @@
     <div class="row">
         <div class="col-md-6 col-xs-12 coluna1">
 
-           
-
-
-            <img src="imagens//pipoquinha.png" width="400px" height="400px">
+            <div class="stars"></div>
+            <img src="imagens//yoda.png" width="400px" class="imageyoda">
+            <br> <br>
+            <div class="yoda">“Que a Força esteja com você.”</div>
+            <img src="imagens//deathstar.webp" width="70px" class="imagedeathstar">
+            <img src="imagens//nave.png" width="50px" class="imagenave">
 
         </div>
         <div class="col-md-6 col-xs-12 coluna2">
             <div class="bg verde">
                 <div class="bg preto">
                     <div class="conteudo">
+
+                        <div class="textatu"><b>Atualize seu Perfil!</b></div>
+                        <br>
 
                         <form action="atualizarperfil.php" method="POST">
                             <label>Nome:</label>
@@ -73,8 +78,11 @@
                                 type="form-control" type="text" placeholder="Insira seu CPF">
                             <br>
                             <br>
-                            <input type="submit" value="Atualizar">
-                        </form>
+                            <input class="btn btn-outline-light" type="submit" value="Atualizar">
+                            </form>
+                            <form action="desconectar.php">
+                            <input class="btn btn-outline-danger boto" type="submit" value="Sair">
+                            </form>
                     </div>
                 </div>
             </div>

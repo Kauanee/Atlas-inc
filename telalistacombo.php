@@ -14,27 +14,28 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <title>Página Listagem dos Combos </title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="estilo_listagem.css">
+    <link rel="stylesheet" href="estilo_listacombos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-
 </head>
 <body>
 <nav>
         <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
         <ul>
             <li>
-                <a href="combo.html">ID </a>
+                <a href="pageCadFilme.php">Cadastrar Filmes</a>
             </li>
             <li>
-                <a href="combo.html">Tamanho Combos </a>
+                <a href="pageCadCombo.php">Cadastrar Combos</a>
             </li>
             <li>
-                <a href="combo.html">Preço dos Combos</a>
+                <a href="telalista.php">Verificar Perfis</a>
             </li>
             <li>
-                <a href="combo.html">Listar Filmes</a>
-            </li>            
+                <a href="pageListaFilmes.php">Listar Filmes</a>
+            </li>    
+            <li>
+                <a href="telalistacombo.php">Listar Combos</a>
+            </li>          
         </ul>
     </nav>
 <div class="logo_meio">
@@ -52,34 +53,30 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <thead>
             <tr>
                 <th class="txt">Código</th>
-                <th class="txt">Email</th>
-                <th class="txt">Senha</th>
-                <th class="txt">Nome</th>
-                <th class="txt">CPF</th>
-                <th class="txt">Data Nasc</th>
+                <th class="txt">Tamanho</th>
+                <th class="txt">Preço</th>
+                <th class="txt">Imagem</th>
                 <th class="txt">Editar</th>
                 <th class="txt">Excluir</th>
             </tr>
         </thead>
         <tbody>
             <?php
-            include("listar_usuarios.php");
+            include("listar_combos.php");
 
-            if (!empty($lista_usuarios)) {
+            if (!empty($lista_combos)) {
              
-                foreach ($lista_usuarios as $linha) { ?>
+                foreach ($lista_combos as $linha) { ?>
                     <tr>
-                        <td class="txt"> <?php echo $linha['cod_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['email_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['senha_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['nome_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['cpf']; ?></td>
-                        <td class="txt"> <?php echo $linha['data_nascimento']; ?></td>
-                        <td class="txt"> <a href="editar.php?codigo=<?php echo $linha['cod_usuario'];?> ">
+                        <td class="txt"> <?php echo $linha['cod_combo']; ?></td>
+                        <td class="txt"> <?php echo $linha['tamanho_combo']; ?></td>
+                        <td class="txt"> <?php echo $linha['preco_combo']; ?></td>
+                        <td> <?php echo '<img height="80px" src="' .$linha['imagem_combo']. '">'; ?> </td>
+                        <td class="txt"> <a href="editarcombo.php?codigo=<?php echo $linha['cod_combo'];?> ">
                                 <input class="txtbotton" type="button" value="Editar">
                             </a>
                         </td>
-                        <td> <a href="excluir_usuario.php?codigo=<?php echo $linha['cod_usuario'];?> ">
+                        <td> <a href="excluir_combo.php?codigo=<?php echo $linha['cod_combo'];?> ">
                                 <input class="txtbotton" type="button" value="Excluir">
                             </a>
                         </td>

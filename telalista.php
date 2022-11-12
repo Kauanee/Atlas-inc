@@ -34,7 +34,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             </li>
             <li>
                 <a href="pageListaFilmes.php">Listar Filmes</a>
-            </li>            
+            </li>  
+            <li>
+                <a href="telalistacombo.php">Listar Combos</a>
+            </li>           
         </ul>
     </nav>
 <div class="logo_meio">

@@ -26,6 +26,9 @@
             <li>
                 <a href="pageListaFilmes.php">Listar Filmes</a>
             </li>
+            <li>
+                <a href="telalistacombo.php">Listar Combos</a>
+            </li> 
         </ul>
     </nav>
 <div class="logo_meio">

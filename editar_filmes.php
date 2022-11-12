@@ -15,9 +15,7 @@
         $base64 = "data:".$extensao.";base64,".base64_encode($conteudo);
     }
 
-    //comando sql.
     $comando = $pdo->prepare("UPDATE movies SET nome_movies=:nome, classificacao_movies=:classi, descricao_movies=:descricao, cartaz_movies=:imagem, categoria_movies=:categoria WHERE cod_movies = :codigo;");
-
 
     $comando->bindValue(':codigo',$codigo);
     $comando->bindValue(':nome',$nome);
@@ -26,10 +24,8 @@
     $comando->bindValue(':imagem',$base64);;
     $comando->bindValue(':categoria',$categoria);
 
-    //executa a consulta no banco de dados.
     $comando->execute();
 
-    //Fecha declaração e conexão.
     unset($comando);
     unset($pdo);
 

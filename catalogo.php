@@ -22,7 +22,7 @@
         <a href="catalogo.php">Filmes</a>
       </li>
       <li>
-        <a href="combo.html">Combos</a>
+        <a href="combo.php">Combos</a>
       </li>
       <li>
         <a href="pagePerfil.html"> Perfil </a>

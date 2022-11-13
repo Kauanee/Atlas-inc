@@ -8,7 +8,7 @@
     $categoria = $_POST["categoria"];
 
     $base64 = '';
-    if(!isset($_FILES)){
+    if(isset($_FILES)){
         $imagem = $_FILES['imagem']; 
         $extensao = $imagem['type'];
         $conteudo = file_get_contents($imagem['tmp_name']);

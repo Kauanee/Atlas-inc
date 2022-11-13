@@ -1,6 +1,8 @@
 <?php
     include("conexao.php");
 
+    session_start();
+
     $comando = $pdo->prepare("SELECT * FROM combo");
 
 

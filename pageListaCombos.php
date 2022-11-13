@@ -1,21 +1,14 @@
-<?php
-session_start();
-
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: combo.html");
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Página Listagem dos Combos </title>
+    <title>Página Listagem de Filmes</title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="estilo_listacombos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
 </head>
 <body>
 <nav>
@@ -25,17 +18,14 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a href="pageCadFilme.php">Cadastrar Filmes</a>
             </li>
             <li>
-                <a href="pageCadCombo.php">Cadastrar Combos</a>
-            </li>
-            <li>
                 <a href="telalista.php">Verificar Perfis</a>
             </li>
             <li>
                 <a href="pageListaFilmes.php">Listar Filmes</a>
-            </li>    
+            </li>
             <li>
-                <a href="telalistacombo.php">Listar Combos</a>
-            </li>          
+                <a href="pageListaCombos.php">Listar Combos</a>
+            </li> 
         </ul>
     </nav>
 <div class="logo_meio">
@@ -46,7 +36,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <div class="col-md-11 col-xs-12 coluna1">
 
     <div class="seus_pedidos">
-    Listagem de Usuários
+    Listagem de Combos
     </div> 
         <div class="cinza">
     <table border="1" class="table table-bordered table-striped">
@@ -64,15 +54,16 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <?php
             include("listar_combos.php");
 
+         
             if (!empty($lista_combos)) {
-             
+              
                 foreach ($lista_combos as $linha) { ?>
                     <tr>
                         <td class="txt"> <?php echo $linha['cod_combo']; ?></td>
                         <td class="txt"> <?php echo $linha['tamanho_combo']; ?></td>
                         <td class="txt"> <?php echo $linha['preco_combo']; ?></td>
                         <td> <?php echo '<img height="80px" src="' .$linha['imagem_combo']. '">'; ?> </td>
-                        <td class="txt"> <a href="editarcombo.php?codigo=<?php echo $linha['cod_combo'];?> ">
+                        <td class="txt"> <a href="editar_combo.php?codigo=<?php echo $linha['cod_combo'];?> ">
                                 <input class="txtbotton" type="button" value="Editar">
                             </a>
                         </td>

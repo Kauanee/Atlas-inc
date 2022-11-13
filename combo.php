@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<title>Página de Combos</title>
+<title>COMBO</title>
 </head>
 
 <body >
@@ -37,61 +37,22 @@
       <h1 class="card-title text-center" style="color:#6DA437">Combos</h1>
   </div>
 
-    <form action="selectCombos.php" method="POST" enctype="multipart/form-data">
-    <div class="row mt-4">
-      <div class="col">
-        <div class="card" name="pequeno">
-        <?php 
-            include("selectCombos.php");
-           
-            foreach ($listar_combo as $linha) { 
-              echo '
-              <div class="swiper-slide">
-                <a href="combo.php?codigo='.$linha['cod_combo'].'"><img style:"height:auto" src="' .$linha['imagem_combo'].'" ></a>
-              </div>';
-            }?> 
-          <div class="card-body ">
-            <h5 class="card-title text-center" style="color:#EA3DEF">Combo Pequeno</h5>
-            <h5 class="text-center" style="color:#EA3DEF">R$12,00</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" name="medio">
-        <?php 
-            include("selectCombos.php");
-           
-            foreach ($listar_combo as $linha) { 
-              echo '
-              <div class="swiper-slide">
-                <a href="combo.php?codigo='.$linha['cod_combo'].'"><img style:"height:auto" src="' .$linha['imagem_combo'].'" ></a>
-              </div>';
-            }?> 
-          <div class="card-body">
-            <h5 class="card-title text-center" style="color:#EB3347">Combo Médio</h5>
-            <h5 class="text-center" style="color:#EB3347">R$17,00</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" name="grande">
-        <?php 
-            include("selectCombos.php");
-           
-            foreach ($listar_combo as $linha) { 
-              echo '
-              <div class="swiper-slide">
-                <a href="combo.php?codigo='.$linha['cod_combo'].'"><img style:"height:auto" src="' .$linha['imagem_combo'].'" ></a>
-              </div>';
-            }?> 
-          <div class="card-body">
-            <h5 class="card-title text-center" style="color:#6DA437">Combo Grande</h5>
-            <h5 class="text-center" style="color:#6DA437">R$22,00</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    </form>
+  <div class="row mt-4">  
+    <?php 
+      include("selectCombos.php");  
+        foreach ($listar_combo as $linha) { 
+          echo '<div class="col">
+                <div class="card">
+                  <img style="width:100%;" src="'.$linha['imagem_combo'].'" >
+                    <div class="card-body ">
+                      <h5 class="card-title text-center" style="color:#EA3DEF">'.$linha['tamanho_combo'].'</h5>
+                      <h5 class="text-center" style="color:#EA3DEF"> '.$linha['preco_combo'].'</h5>
+                    </div>
+                </div>
+                </div>';
+      }?> 
+  </div>
+  <br><br>
+      <div class="text-center txt"><b>Atlas-inc</b><br>Kauane, Nicole e Gustavo</div>
 </body>
-
 </html>

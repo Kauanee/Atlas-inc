@@ -32,22 +32,23 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <div class="row justify-content-center align-items-centers mt-5">
         <div class="col-mx-auto text-center">
     <div class="formulario">
-    <form action="editarcombos.php?codigo=<?php echo $_GET['codigo'];?>" method="POST" enctype="multipart/form-data">
+    <form action="editar_combos.php?codigo=<?php echo $_GET['codigo'];?>" method="POST" enctype="multipart/form-data">
         <label class="text-light">Tamanho:</label>
         <br>
-        <input type="text" style="width:300px;" class="text-center" name="tamanho" value="<?php echo $combo['tamanho_combo'];?>">
-        <br>
+        <input type="text" style="width:300px;" class="text-center" name="tamanho" value="<?php echo $combos['tamanho_combo'];?>">
+        <br><br>
         <label class="text-light">Preço:</label>
         <br>
-        <input type="text" style="width:300px;" class="text-center" name="preco" value="<?php echo $combo['preco_combo'];?>">
+        <input type="text" style="width:300px;" class="text-center" name="preco" value="<?php echo $combos['preco_combo'];?>">
+        <br><br>
+        <label class="text-light">Imagem:</label>
         <br>
-        <br>
-        <input type="file" name="imagem" multiple accept="image/*"> 
+        <input type="file" style="color:white;" name="imagem" multiple accept="image/*"> 
         <br><br>
         <input type="submit" class="btn btn-outline-light" value="Atualizar" name="submit">
-        <br><br>
     </form>
-    <a href="telalistacombo.php" class="btn btn-outline-light">Voltar</a>
+    <br>
+    <a href="pageListaCombos.php" class="btn btn-outline-light">Voltar</a>
 </div>
 </div>
 </div>

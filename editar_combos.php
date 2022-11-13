@@ -2,11 +2,11 @@
     include("conexao.php");
 
     $codigo = $_GET['codigo'];
-    $tamanho = $_POST['tamanho'];
-    $preco = $_POST['preco'];
+    $tamanho = $_POST["tamanho"];
+    $preco = $_POST["preco"];
 
     $base64 = '';
-    if(!isset($_FILES)){
+    if(isset($_FILES)){
         $imagem = $_FILES['imagem']; 
         $extensao = $imagem['type'];
         $conteudo = file_get_contents($imagem['tmp_name']);
@@ -25,5 +25,5 @@
     unset($comando);
     unset($pdo);
 
-    header("location:telalistacombo.php");
+    header("location:pageListaCombos.php");
 ?>

@@ -10,7 +10,6 @@
     
     if($comando->rowCount() >= 1)
     {
-    
         $listar_combo = $comando->fetchAll();
     }else{
         echo("Não há Combos.");

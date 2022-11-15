@@ -62,7 +62,6 @@
               <div class="swiper-slide">
                 <a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><img style:"height:auto" src="' .$linha['cartaz_movies'].'" ></a>
               </div>';
-            
             }
             
     ?> 

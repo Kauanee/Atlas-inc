@@ -6,12 +6,17 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     exit;
 }
 ?>
+<?php
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Página Listagem de Usuários</title>
+    <title>Página de Pedidos</title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="estilo_listarpedidos.css">
@@ -23,18 +28,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <nav>
         <img src="imagens/logoverde.png" class="logo" alt="Receitas de Código">
         <ul>
-            <li>
-                <a href="pageCadFilme.php">Cadastrar Filmes</a>
+        <li>
+                <a href="catalogo.php">Filmes</a>
             </li>
             <li>
-                <a href="pageCadCombo.php">Cadastrar Combos</a>
+                <a href="pagePerfil.html"> Perfil </a>
             </li>
             <li>
-                <a href="telalista.php">Verificar Perfis</a>
-            </li>
-            <li>
-                <a href="pageListaFilmes.php">Listar Filmes</a>
-            </li>            
+                <a href="pageListaPedidos.php">Meus Pedidos</a>
+            </li>           
         </ul>
     </nav>
 <div class="logo_meio">
@@ -45,42 +47,35 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <div class="col-md-11 col-xs-12 coluna1">
 
     <div class="seus_pedidos">
-    Listagem de Usuários
+    Meus Pedidos
     </div> 
         <div class="cinza">
     <table border="1" class="table table-bordered table-striped">
         <thead>
             <tr>
                 <th class="txt">Código</th>
-                <th class="txt">Email</th>
-                <th class="txt">Senha</th>
-                <th class="txt">Nome</th>
-                <th class="txt">CPF</th>
-                <th class="txt">Data Nasc</th>
-                <th class="txt">Editar</th>
+                <th class="txt">Ingresso</th>
+                <th class="txt">Filme</th>
+                <th class="txt">Valor</th>
+                <th class="txt">Usuário</th>
                 <th class="txt">Excluir</th>
             </tr>
         </thead>
         <tbody>
             <?php
-            include("listar_usuarios.php");
+            include("listar_pedidos.php");
 
            
-            if (!empty($lista_usuarios)) {
+            if (!empty($lista_pedidos)) {
              
-                foreach ($lista_usuarios as $linha) { ?>
+                foreach ($lista_pedidos as $linha) { ?>
                     <tr>
-                        <td class="txt"> <?php echo $linha['cod_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['email_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['senha_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['nome_usuario']; ?></td>
-                        <td class="txt"> <?php echo $linha['cpf']; ?></td>
-                        <td class="txt"> <?php echo $linha['data_nascimento']; ?></td>
-                        <td class="txt"> <a href="editar.php?codigo=<?php echo $linha['cod_usuario'];?> ">
-                                <input class="txtbotton" type="button" value="Editar">
-                            </a>
-                        </td>
-                        <td> <a href="excluir_usuario.php?codigo=<?php echo $linha['cod_usuario'];?> ">
+                        <td class="txt"> <?php echo $linha['cod_ingresso']; ?></td>
+                        <td class="txt"> <?php echo $linha['puff_ingresso']; ?></td>
+                        <td class="txt"> <?php echo $linha['filme_sessao']; ?></td>
+                        <td class="txt"> <?php echo $linha['total_ingresso']; ?></td>
+                        <td class="txt"> <?php echo $linha['fk_usuario']; ?></td>
+                        <td> <a href="excluir_ingresso.php?codigo=<?php echo $linha['cod_ingresso'];?> ">
                                 <input class="txtbotton" type="button" value="Excluir">
                             </a>
                         </td>

@@ -29,10 +29,7 @@
             </li>
             <li>
                 <a href="pageListaFilmes.php">Listar Filmes</a>
-            </li>
-            <li>
-                <a href="pageListaCombos.php">Listar Combos</a>
-            </li>   
+            </li>  
         </ul>
     </nav>
 

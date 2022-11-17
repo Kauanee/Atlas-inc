@@ -1,18 +1,16 @@
-
 <?php
     include("conexao.php");
 
-    
-    $comando = $pdo->prepare("SELECT *  FROM combo;");
+    $comando = $pdo->prepare("SELECT * FROM ingresso;");
     
     $comando->execute();
 
-    
+   
     if($comando->rowCount() >= 1)
     {
-        $listar_combo = $comando->fetchAll();
+        $lista_pedidos = $comando->fetchAll();
     }else{
-        echo("Não há Combos.");
+        echo("Não há pedidos cadastrados.");
     }
     unset($comando);
     unset($pdo);

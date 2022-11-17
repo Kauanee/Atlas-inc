@@ -2,7 +2,6 @@ body{
 
     background-image: linear-gradient( to right,  black 50%, #585757 50% )!important;
     color: white !important;
-    overflow: hidden;
 }
 
 ul{

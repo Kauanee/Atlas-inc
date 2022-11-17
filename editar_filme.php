@@ -1,8 +1,5 @@
 <?php
-include("listar_usuario.php");
-
 session_start();
-// Verifique se o usuário está logado, se não, redirecione-o para uma página de login
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login.html");
     exit;
@@ -13,7 +10,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Página Listagem</title>
+    <title>Página Listagem de Filmes</title>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="estilo_editar.css">
@@ -30,7 +27,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </div>
 
     <div class="seus_pedidos">
-    Edição de Usuários
+    Edição de Filmes
     </div> 
     <div class="row justify-content-center align-items-centers mt-5">
         <div class="col-mx-auto text-center">

@@ -21,14 +21,10 @@
                     <a class="text-decoration-none" href="catalogo.html">Filmes</a>
             </li>
             <li>
-                 <a class="text-decoration-none" href="combo.html">Combos</a>
-            </li>
-            <li>
                   <a class="text-decoration-none" href="pagePerfil.html"> Perfil </a>
             </li>
         </ul>
     </nav>
-
 
     <div class="row">
         <div class="col-md-6 col-xs-12 coluna1">
@@ -44,34 +40,28 @@
                         <br>
                         <br>
                         <br>
-
-                     
-                        <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('pix');">
+                        <a href="pagamentoPix.html"><button style="height: 50px; width:200px;" class="button">
                                 <b>Pix</b>
                         </button>
-                     
-
+                        </a>
                         <br>
                         <br>
                         <br>
-                      
-                        <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('boleto');">
-                                    <b>Boleto</b>
-                        </button>
-        
+                        <a href="pagamentoBoleto.html"><button style="height: 50px; width:200px;" class="button">
+                                <b>Boleto</b>
+                        </button>   
+                        </a>     
                         <br>
                         <br>
                         <br>
-                       
-                        <button style="height: 50px; width:200px;" class="button" onclick="formadepagamento('credito');">
+                        <a href="pagamentoCartao.html"><button style="height: 50px; width:200px;" class="button">
                               <b>Cartão de Crédito</b>
                         </button>
-               
+                        </a>
                         <br>
                         <br>
                         <br>
                         <br>
-
                         <div class="moinho">
                             <img src="imagens/caminho.png" width="60px">
                         </div>
@@ -82,10 +72,5 @@
     </div>
 
 </body>
-<script>
-    function formadepagamento(forma){
-        window.open("insertformapag.php?tipo="+forma,"_self");
-    }
-    </script>
 
 </html>

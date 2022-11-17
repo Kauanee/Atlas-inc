@@ -22,11 +22,11 @@
         <a href="catalogo.php">Filmes</a>
       </li>
       <li>
-        <a href="combo.html">Combos</a>
-      </li>
-      <li>
         <a href="pagePerfil.html"> Perfil </a>
       </li>
+      <li>
+      <a href="pageListaPedidos.php">Meus Pedidos</a>
+            </li> 
     </ul>
   </nav>
   <img src="imagens/aladin1.png" class="img-fluid" alt="Receitas de Código">
@@ -62,7 +62,6 @@
               <div class="swiper-slide">
                 <a href="pageDescFilm.php?codigo='.$linha['cod_movies'].'"><img style:"height:auto" src="' .$linha['cartaz_movies'].'" ></a>
               </div>';
-            
             }
             
     ?> 

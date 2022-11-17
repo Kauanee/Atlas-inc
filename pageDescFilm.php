@@ -3,7 +3,7 @@
 
     $codigo = $_GET["codigo"];
 
-    $comando = $pdo->prepare("SELECT cod_movies, nome_movies, classificacao_movies, descricao_movies, cartaz_movies, categoria_movies  FROM movies WHERE cod_movies = :codigo");
+    $comando = $pdo->prepare("SELECT cod_movies, nome_movies, classificacao_movies, descricao_movies, cartaz_movies, categoria_movies  FROM movies WHERE cod_movies = :codigo;");
 
     $comando->bindValue(":codigo",$codigo);
 
@@ -42,11 +42,11 @@
         <a href="catalogo.php">Filmes</a>
       </li>
       <li>
-        <a href="combo.html">Combos</a>
-      </li>
-      <li>
         <a href="pagePerfil.html"> Perfil </a>
       </li>
+      <li>
+      <a href="pageListaPedidos.php">Meus Pedidos</a>
+            </li> 
     </ul>
   </nav>
   <img src="imagens/aladin1.png" class="img-fluid" alt="Receitas de Código">
@@ -331,7 +331,7 @@
             <img src="imagens/tela.png" class="img-responsive tela" name="Tela">
             <hr>
 
-            <form action="inserirPuff.php" method="POST">
+            <form action="inserirPuff.php?codigo=<?php echo $_GET['codigo'];?>" method="POST">
                 <div class="row buttons">
                     <div class="col-xs-12">
                         <div class="col-md-4">
@@ -351,10 +351,6 @@
     </center>
 
     </div>
-
-
-</body>
-
 
 
 </body>

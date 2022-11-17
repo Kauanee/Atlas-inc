@@ -57,7 +57,8 @@
 
     </div>
 
-    <div class="title">        <?php
+    <div class="title">     
+       <?php
             echo $listar_filme['nome_movies'];
         ?></div>
         <br>
